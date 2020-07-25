@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>quacker app 🦆</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>quacker app 🦆</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Quacker - Twitter for Ducks 🦆</h1>
+        </header>
+        <main>
+            <form>
+                <label for="name">Name</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="name please 👱‍♂️"
+                />
+
+                <label for="content">Quack</label>
+                <textarea
+                    class="u-full-width"
+                    name="content"
+                    id="content"
+                    placeholder="place your quack 🦆..."
+                    cols="30"
+                    rows="10"
+                ></textarea>
+
+                <button class="button-primary" type="submit">
+                    Quack Quack 🦆
+                </button>
+            </form>
+            <div class="loading">
+                <!-- <img src="assets/loading.gif" alt="loading..." /> -->
+            </div>
+        </main>
+        <footer></footer>
+    </body>
 </html>

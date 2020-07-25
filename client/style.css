@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.loading {
+    text-align: center;
+}
+
+.loading > img {
+    width: 10%;
+}

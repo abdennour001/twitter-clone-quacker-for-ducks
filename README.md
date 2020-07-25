@@ -26,14 +26,14 @@ Features:
 
 -   [x] Create client folder
 -   [x] Setup index.html
--   [ ] Bring in Skeleton CSS
+-   [x] Bring in Skeleton CSS
     -   http://getskeleton.com/
     -   https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
--   [ ] Create Header
--   [ ] Create a form
-    -   [ ] Name
-    -   [ ] Content
-    -   [ ] u-full-width to both inputs (full width class in skeleton)
+-   [x] Create Header
+-   [x] Create a form
+    -   [x] Name
+    -   [x] Content
+    -   [x] u-full-width to both inputs (full width class in skeleton)
 -   [ ] Use javascript to listen to form
 -   [ ] Hide form
 -   [ ] Showing loading spinner
