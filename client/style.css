@@ -12,5 +12,6 @@ form {
 }
 
 .loading > img {
-    width: 10%;
+    margin: 2rem;
+    width: 15%;
 }

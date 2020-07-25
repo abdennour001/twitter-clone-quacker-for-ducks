@@ -34,10 +34,10 @@ Features:
     -   [x] Name
     -   [x] Content
     -   [x] u-full-width to both inputs (full width class in skeleton)
--   [ ] Use javascript to listen to form
--   [ ] Hide form
--   [ ] Showing loading spinner
--   [ ] Log data from form
+-   [x] Use javascript to listen to form
+-   [x] Hide form
+-   [x] Showing loading spinner
+-   [x] Log data from form
 
 *   ✅ Get user input on the Client
 *   ✅ Hide/Show elements on the client
