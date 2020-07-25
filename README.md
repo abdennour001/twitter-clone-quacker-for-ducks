@@ -19,7 +19,7 @@ Features:
 -   [ ] 🙈 Hide/Show elements on the client
 -   [ ] ✨ Add elements to the page on the client
 -   [ ] 🚀 Deploy the client with now.sh
--   [ ] 🚀 Deploy the database with mlab
+-   [ ] 🚀 Deploy the database with atlas
 -   [ ] 🚀 Deploy the server with now.sh
 
 ## Front-end
