@@ -10,7 +10,7 @@ form {
 
 @media only screen and (max-width: 800px) {
     form {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 }
@@ -21,7 +21,14 @@ form {
 
 .loading > img {
     margin: 2rem;
-    width: 15%;
+    width: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    .loading > img {
+        margin: 2rem;
+        width: 10%;
+    }
 }
 
 .quack {
@@ -29,6 +36,14 @@ form {
     background: rgba(0, 0, 255, 0.023);
     padding: 2rem;
     margin: 2rem;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.quack:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .quacks-container {
@@ -41,4 +56,8 @@ form {
         width: 100%;
         margin: 0 auto;
     }
+}
+
+small {
+    opacity: 0.5;
 }

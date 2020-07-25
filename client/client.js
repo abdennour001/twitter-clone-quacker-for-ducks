@@ -2,7 +2,10 @@ var form = document.querySelector("form");
 var loading = document.querySelector(".loading");
 var quacksContainer = document.querySelector(".quacks-container");
 
-const API_URL = "http://localhost:5000/quacks";
+const API_URL =
+    window.location.hostname === "127.0.0.1"
+        ? "http://localhost:5000/quacks"
+        : "https://quacker-api.vercel.app/quacks";
 
 loading.style.display = "none";
 
