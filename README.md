@@ -48,59 +48,59 @@ Features:
 -   [x] npm init -y
 -   [x] npm install express morgan
 -   [x] Setup index.js
--   [ ] Add GET / route
--   [ ] Add POST /quacks route
-    -   [ ] log out req.body
+-   [x] Add GET / route
+-   [x] Add POST /quacks route
+    -   [x] log out req.body
 
 ## Front-end
 
--   [ ] fetch POST /quacks with form data
--   [ ] See the CORS error and revel in this moment
+-   [x] fetch POST /quacks with form data
+-   [x] See the CORS error and revel in this moment
 -   ✅ Send user input from the client with fetch to the server
 
 ## Back-end
 
--   [ ] npm install cors
--   [ ] Make sure the server is recieving the data
--   [ ] Add JSON body parser middleware
--   [ ] Validate name and content
-    -   [ ] Must be a string
-    -   [ ] Cannot be empty
--   [ ] If not valid
-    -   [ ] Error code 422
-    -   [ ] Invalid quack, must contain name and content
--   [ ] Setup DB Connection
-    -   [ ] npm install monk
-    -   [ ] connect to db
-    -   [ ] create document collection (quacks)
--   [ ] If Valid
-    -   [ ] Create quack object with
-        -   [ ] name, content, created_date
-    -   [ ] Insert into DB
-    -   [ ] Respond with created quack object
+-   [x] npm install cors
+-   [x] Make sure the server is recieving the data
+-   [x] Add JSON body parser middleware
+-   [x] Validate name and content
+    -   [x] Must be a string
+    -   [x] Cannot be empty
+-   [x] If not valid
+    -   [x] Error code 422
+    -   [x] Invalid quack, must contain name and content
+-   [x] Setup DB Connection
+    -   [x] npm install monk
+    -   [x] connect to db
+    -   [x] create document collection (quacks)
+-   [x] If Valid
+    -   [x] Create quack object with
+        -   [x] name, content, created_date
+    -   [x] Insert into DB
+    -   [x] Respond with created quack object
 -   ✅ Store data in a database
 
 ## Front-end
 
--   [ ] Log out created quack after POST request
--   [ ] Show the form
--   [ ] Hide loading spinner
+-   [x] Log out created quack after POST request
+-   [x] Show the form
+-   [x] Hide loading spinner
 
 ## Back-end
 
--   [ ] GET /quacks
-    -   [ ] Respond with quacks from DB
+-   [x] GET /quacks
+    -   [x] Respond with quacks from DB
 -   ✅ Retrieve data from a database on the Server
 
 ## Front-end
 
--   [ ] fetch GET /quacks
-    -   [ ] Iterate over array
-    -   [ ] Append each to page
-    -   [ ] Reverse before appending
-    -   [ ] Show the form
-    -   [ ] Hide loading spinner
--   [ ] fetch GET /quacks after creating a quack
+-   [x] fetch GET /quacks
+    -   [x] Iterate over array
+    -   [x] Append each to page
+    -   [x] Reverse before appending
+    -   [x] Show the form
+    -   [x] Hide loading spinner
+-   [x] fetch GET /quacks after creating a quack
 -   ✅ Retrieve data from a server on the client using Fetch
 -   ✅ Hide/Show elements on the client
 -   ✅ Add elements to the page on the client
