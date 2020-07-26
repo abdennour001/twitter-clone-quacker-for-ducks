@@ -112,12 +112,12 @@ Features:
 ## Deploy
 
 -   ✅ Deploy server with now
-    -   [ ] Setup environment variables
-        -   [ ] Database connection
+    -   [x] Setup environment variables
+        -   [x] Database connection
             -   process.env.MONGO_URI
     -   ✅ Show atlas
-    -   [ ] Deploy with environment variable
+    -   [x] Deploy with environment variable
         -   now -e MONGO_URI=@quacker-db
-    -   [ ] Add alias
+    -   [x] Add alias
 -   ✅ Deploy client folder with now
-    -   [ ] Set API_URL based on hostname
+    -   [x] Set API_URL based on hostname
