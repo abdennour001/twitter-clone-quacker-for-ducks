@@ -3,7 +3,7 @@
 This is a simple twitter clone (quacker for ducks 🦆). Built using NodeJS (MERN stack)
 
 <p align='center'>
-    <img src='/assets/example.gif' alt='G2.'/>
+    <img src='/client/assets/example.gif' alt='G2.'/>
 </p>
 
 Tutorial from CJ Coding Garden: https://www.youtube.com/watch?v=JnEH9tYLxLk
