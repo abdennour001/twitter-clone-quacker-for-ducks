@@ -1,0 +1,14 @@
+{
+    "name": "quacker-api",
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes": [{ "src": "/.*", "dest": "server.js" }],
+    "env": {
+        "MONGODB_URI": "mongodb://abdennour:Abdou123@cluster0-shard-00-00.jfdxb.mongodb.net:27017,cluster0-shard-00-01.jfdxb.mongodb.net:27017,cluster0-shard-00-02.jfdxb.mongodb.net:27017/url_shortener?ssl=true&replicaSet=atlas-hqs1w8-shard-0&authSource=admin&retryWrites=true&w=majority"
+    }
+}
