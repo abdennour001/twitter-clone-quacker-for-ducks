@@ -114,11 +114,11 @@ Features:
 
 ## Front-end
 
--   [ ] add login form
--   [ ] add register form
--   [ ] listen to the forms using javascript
--   [ ] allow auth-users to post a quack
--   [ ] allow auth-users to logout and hide the quack form
+-   [x] add login form
+-   [x] add register form
+-   [x] listen to the forms using javascript
+-   [x] allow auth-users to post a quack
+-   [x] allow auth-users to logout and hide the quack form
 
 -   ✅ Retrieve data from login, register forms
 -   ✅ Hide/Show login, register and quack forms
@@ -126,16 +126,16 @@ Features:
 
 ## Back-end
 
--   [ ] npm install bcrypt jsonwebtoken email-validator
--   [ ] add authentication endpoints
--   [ ] store users information in the database
--   [ ] add requireAuth middleware to auth-protected endpoints
+-   [x] npm install bcrypt jsonwebtoken email-validator
+-   [x] add authentication endpoints
+-   [x] store users information in the database
+-   [x] add requireAuth middleware to auth-protected endpoints
 
 -   ✅ Auth endpoints
 
 ## Front-end
 
--   [ ] add auth endpoints to the auth forms
+-   [x] add auth endpoints to the auth forms
 
 ## Deploy
 
