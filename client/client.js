@@ -1,6 +1,12 @@
-var form = document.querySelector("form");
+var form = document.querySelector("#quackquack");
 var loading = document.querySelector(".loading");
 var quacksContainer = document.querySelector(".quacks-container");
+
+var loginForm = document.querySelector("#login");
+var registerForm = document.querySelector("#register");
+
+loginForm.style.display = "none";
+registerForm.style.display = "none";
 
 const API_URL =
     window.location.hostname === "127.0.0.1"
@@ -8,6 +14,11 @@ const API_URL =
         : "https://quacker-api.vercel.app/quacks";
 
 loading.style.display = "none";
+
+// check if user is auth
+const isAuth = () => {
+    return;
+};
 
 const createQuackElement = quack => {
     const div = document.createElement("div");

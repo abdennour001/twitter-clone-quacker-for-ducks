@@ -16,7 +16,7 @@
             <h1 class="title">Quacker - Twitter for Ducks 🦆</h1>
         </header>
         <main>
-            <form>
+            <form id="quackquack">
                 <label for="name">Name</label>
                 <input
                     class="u-full-width"
@@ -42,6 +42,88 @@
                     Quack Quack 🦆
                 </button>
             </form>
+            <form id="login">
+                <label for="email">Email</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                />
+
+                <label for="password">Passsword</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                />
+
+                <button class="button-primary" type="submit">
+                    login 🦆
+                </button>
+            </form>
+            <form id="register">
+                <label for="email">Email</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                />
+
+                <label for="password">Passsword</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                />
+                <label for="password">Confirm Passsword</label>
+                <input
+                    class="u-full-width"
+                    type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Password again"
+                    required
+                />
+
+                <button class="button-primary" type="submit">
+                    register 🦆
+                </button>
+            </form>
+            <div class="not-auth">
+                <p
+                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
+                >
+                    You must
+                </p>
+                <button class="button-primary" type="submit">
+                    login
+                </button>
+                <p
+                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
+                >
+                    or
+                </p>
+                <button class="button-primary" type="submit">
+                    register 🦆
+                </button>
+                <p
+                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
+                >
+                    to quack.
+                </p>
+            </div>
             <div class="loading">
                 <img src="assets/loading.gif" alt="loading..." />
             </div>

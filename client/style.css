@@ -39,7 +39,6 @@ form {
     cursor: pointer;
     transition: box-shadow 0.5s ease;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-
 }
 
 .quack:hover {
@@ -60,4 +59,8 @@ form {
 
 small {
     opacity: 0.5;
+}
+
+.not-auth {
+    text-align: center;
 }

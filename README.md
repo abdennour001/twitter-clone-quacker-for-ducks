@@ -22,6 +22,9 @@ Features:
 -   [ ] ⬅️ Retrieve data from a server on the client using Fetch
 -   [ ] 🙈 Hide/Show elements on the client
 -   [ ] ✨ Add elements to the page on the client
+-   [ ] 🔑 Add authentication system to the back-end
+-   [ ] 🔄 Update the front-end, add auth login and register forms
+-   [ ] 🔴 Everyone can see all quacks but only auth-user can quack
 -   [ ] 🚀 Deploy the client with now.sh
 -   [ ] 🚀 Deploy the database with atlas
 -   [ ] 🚀 Deploy the server with now.sh
@@ -108,6 +111,31 @@ Features:
 -   ✅ Retrieve data from a server on the client using Fetch
 -   ✅ Hide/Show elements on the client
 -   ✅ Add elements to the page on the client
+
+## Front-end
+
+-   [ ] add login form
+-   [ ] add register form
+-   [ ] listen to the forms using javascript
+-   [ ] allow auth-users to post a quack
+-   [ ] allow auth-users to logout and hide the quack form
+
+-   ✅ Retrieve data from login, register forms
+-   ✅ Hide/Show login, register and quack forms
+-   ✅ Allow auth-users to post a quack
+
+## Back-end
+
+-   [ ] npm install bcrypt jsonwebtoken email-validator
+-   [ ] add authentication endpoints
+-   [ ] store users information in the database
+-   [ ] add requireAuth middleware to auth-protected endpoints
+
+-   ✅ Auth endpoints
+
+## Front-end
+
+-   [ ] add auth endpoints to the auth forms
 
 ## Deploy
 
