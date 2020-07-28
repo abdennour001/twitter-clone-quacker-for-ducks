@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const monk = require("monk");
-const bcypt = require("bcrypt");
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const emailValidator = require("email-validator");
+const EmailValidator = require("email-validator");
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 const app = express();
@@ -21,13 +21,13 @@ const users = db.get("users");
 // generate password hash
 const generatePassword = async password => {
     const saltRounds = 10;
-    const salt = await bcypt.genSalt(saltRounds);
+    const salt = await bcrypt.genSalt(saltRounds);
     return await bcrypt.hash(password, salt);
 };
 
 // compare passwords
 const comparePasswords = async (password, hash) => {
-    return await bcypt.compare(password, hash);
+    return await bcrypt.compare(password, hash);
 };
 
 // sign with jwt
@@ -62,7 +62,7 @@ app.post("/auth/", async (req, res) => {
     const { email, password } = req.body;
 
     // check email if valid
-    if (!email || !emailValidator(email)) {
+    if (!email || !EmailValidator.validate(email)) {
         return res.status(400).send({
             auth: false,
             message: "Email is required or malformed."
@@ -78,7 +78,7 @@ app.post("/auth/", async (req, res) => {
     }
 
     // Check if user exists
-    user = await users.find({ email });
+    user = await users.findOne({ email });
 
     if (user) {
         return res
@@ -97,9 +97,9 @@ app.post("/auth/", async (req, res) => {
     // save user
     const savedUser = await users.insert(newUser);
     if (savedUser) {
-        const jwt = generateJWT(email, password_hash);
+        const jwt = await generateJWT(email, password_hash);
         if (jwt) {
-            res.status(201).send({ token: jwt, user: newUser });
+            res.status(201).send({ auth: true, token: jwt, user: newUser });
         } else {
             return res.status(400).send({
                 auth: false,
@@ -118,7 +118,7 @@ app.post("/auth/login", async (req, res) => {
     const { email, password } = req.body;
 
     // check email if valid
-    if (!email || !emailValidator(email)) {
+    if (!email || !EmailValidator.validate(email)) {
         return res.status(400).send({
             auth: false,
             message: "Email is required or malformed."
@@ -134,7 +134,7 @@ app.post("/auth/login", async (req, res) => {
     }
 
     // Check if user exists
-    user = await users.find({ email });
+    user = await users.findOne({ email });
 
     if (!user) {
         return res.status(401).send({ auth: false, message: "Unauthorized." });
@@ -148,7 +148,7 @@ app.post("/auth/login", async (req, res) => {
     }
 
     // Generate JWT
-    const jwt = generateJWT(user.email, user.password_hash);
+    const jwt = await generateJWT(user.email, user.password_hash);
 
     res.status(200).send({ auth: true, token: jwt, user: user });
 });

@@ -63,4 +63,34 @@ small {
 
 .not-auth {
     text-align: center;
+    padding: 3rem;
+}
+
+.pr-2 {
+    display: inline;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .not-auth {
+        padding: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .pr-2 {
+        display: inline;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+
+    .button-primary {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+a {
+    cursor: pointer;
 }

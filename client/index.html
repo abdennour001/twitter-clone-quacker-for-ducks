@@ -17,6 +17,13 @@
         </header>
         <main>
             <form id="quackquack">
+                <div style="display:flex">
+                    <p id="emailTag" style="margin: 0">abdou</p>
+                    <a id="logout" style="margin-left: auto;">logout</a>
+                </div>
+
+                <hr />
+
                 <label for="name">Name</label>
                 <input
                     class="u-full-width"
@@ -47,7 +54,7 @@
                 <input
                     class="u-full-width"
                     type="text"
-                    id="email"
+                    id="emailLogin"
                     name="email"
                     placeholder="Email"
                     required
@@ -56,8 +63,8 @@
                 <label for="password">Passsword</label>
                 <input
                     class="u-full-width"
-                    type="text"
-                    id="password"
+                    type="password"
+                    id="passwordLogin"
                     name="password"
                     placeholder="Password"
                     required
@@ -66,6 +73,15 @@
                 <button class="button-primary" type="submit">
                     login 🦆
                 </button>
+
+                <p class="pr-2">
+                    <span style="padding-right: 1rem;padding-left: 1rem">
+                        or
+                    </span>
+                </p>
+                <a class="registerLink">
+                    register
+                </a>
             </form>
             <form id="register">
                 <label for="email">Email</label>
@@ -81,18 +97,18 @@
                 <label for="password">Passsword</label>
                 <input
                     class="u-full-width"
-                    type="text"
+                    type="password"
                     id="password"
                     name="password"
                     placeholder="Password"
                     required
                 />
-                <label for="password">Confirm Passsword</label>
+                <label for="passwordConfirm">Confirm Passsword</label>
                 <input
                     class="u-full-width"
-                    type="text"
-                    id="password"
-                    name="password"
+                    type="password"
+                    id="passwordConfirm"
+                    name="passwordConfirm"
                     placeholder="Password again"
                     required
                 />
@@ -100,27 +116,29 @@
                 <button class="button-primary" type="submit">
                     register 🦆
                 </button>
+                <p class="pr-2">
+                    <span style="padding-right: 1rem;padding-left: 1rem">
+                        or
+                    </span>
+                </p>
+                <a class="loginLink">
+                    login
+                </a>
             </form>
             <div class="not-auth">
-                <p
-                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
-                >
+                <p class="pr-2">
                     You must
                 </p>
-                <button class="button-primary" type="submit">
+                <a class="loginLink">
                     login
-                </button>
-                <p
-                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
-                >
+                </a>
+                <p class="pr-2">
                     or
                 </p>
-                <button class="button-primary" type="submit">
+                <a class="registerLink">
                     register 🦆
-                </button>
-                <p
-                    style="display: inline; padding-right: 2rem; padding-left: 2rem"
-                >
+                </a>
+                <p class="pr-2">
                     to quack.
                 </p>
             </div>
