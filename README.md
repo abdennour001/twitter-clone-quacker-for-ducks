@@ -13,6 +13,10 @@ Features:
 -   Ducks can send a quack 🦆
 -   Ducks can see all other quacks that have been sent 💻
 
+## Live Demo
+
+https://quacker.vercel.app/
+
 ## Objectives
 
 -   [ ] ⌨️ Get user input on the Client
