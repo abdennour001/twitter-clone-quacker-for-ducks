@@ -19,19 +19,19 @@ https://quacker.vercel.app/
 
 ## Objectives
 
--   [ ] ⌨️ Get user input on the Client
--   [ ] ➡️ Send user input from the client with fetch to the server
--   [ ] 🗃 Store data in a database
--   [ ] 🔍 Retrieve data from a database on the Server
--   [ ] ⬅️ Retrieve data from a server on the client using Fetch
--   [ ] 🙈 Hide/Show elements on the client
--   [ ] ✨ Add elements to the page on the client
--   [ ] 🔑 Add authentication system to the back-end
--   [ ] 🔄 Update the front-end, add auth login and register forms
--   [ ] 🔴 Everyone can see all quacks but only auth-user can quack
--   [ ] 🚀 Deploy the client with now.sh
--   [ ] 🚀 Deploy the database with atlas
--   [ ] 🚀 Deploy the server with now.sh
+-   [x] ⌨️ Get user input on the Client
+-   [x] ➡️ Send user input from the client with fetch to the server
+-   [x] 🗃 Store data in a database
+-   [x] 🔍 Retrieve data from a database on the Server
+-   [x] ⬅️ Retrieve data from a server on the client using Fetch
+-   [x] 🙈 Hide/Show elements on the client
+-   [x] ✨ Add elements to the page on the client
+-   [x] 🔑 Add authentication system to the back-end
+-   [x] 🔄 Update the front-end, add auth login and register forms
+-   [x] 🔴 Everyone can see all quacks but only auth-user can quack
+-   [x] 🚀 Deploy the client with now.sh
+-   [x] 🚀 Deploy the database with atlas
+-   [x] 🚀 Deploy the server with now.sh
 
 ## Front-end
 
